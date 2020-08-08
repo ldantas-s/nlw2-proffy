@@ -1,4 +1,3 @@
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +24,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	width: 100%;
+	height: 100vh;
 	line-height: 1;
 	background-color: var(--color-background);
 }
@@ -57,6 +58,8 @@ button {
 		1rem: 9,6px;
 	*/
 	font: 500 1.6rem Poppins;
+	color: var(--color-title-in-primary);
+	outline: none;
 }
 
 @media(min-width: 700px) {

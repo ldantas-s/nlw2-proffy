@@ -4,8 +4,10 @@ import styled from 'styled-components';
 const ButtonProffy = styled.button`
     border: 0;
     border-radius: 8px;
-    padding: 32px 64px;
+    padding: 32px 42px;
+    margin: 1rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-weight: 700;
     color: var(--color-button-text);
