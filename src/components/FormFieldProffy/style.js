@@ -20,7 +20,7 @@ export const FormFieldWrapper = styled.div`
     
 `;
 FormFieldWrapper.Label = styled.label`
-    color: var(--color-text-in-primary);
+    color: var(--color-text-complement);
     cursor: pointer;
 `;
 FormFieldWrapper.Input = styled.input`

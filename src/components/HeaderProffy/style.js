@@ -33,17 +33,18 @@ HeaderStyle.Wrapper = styled.div`
         }
         & > h1,
         & > p {
-            width: 30rem;
+            width: 32rem;
         }
     }
 `;
 HeaderStyle.Title = styled.h1`
-    margin: 1.5rem 0;
+    margin: 1.2rem 0;
     font-size: 3rem;
     font-weight: 700;
 `;
 HeaderStyle.SubTitle = styled.p`
-    margin: 1.5rem 0;
+    color: var(--color-text-in-primary);
+    margin: 1rem 0 5rem;
     font-size: 1.5rem;
 `;
 
