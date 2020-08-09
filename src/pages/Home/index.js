@@ -28,10 +28,10 @@ function Home() {
             
             <BlockContent.Footer>
                 <BlockContent.Buttons>
-                    <ButtonProffy.Purple as={Link} to="proffys">
+                    <ButtonProffy.Purple as={Link} to="study">
                         <MainHome.Icon src={study} atl="Icon Study" />Estudar
                     </ButtonProffy.Purple>
-                    <ButtonProffy.Green>
+                    <ButtonProffy.Green as={Link} to="give-classes">
                         <MainHome.Icon src={giveClasses} atl="Icon Give Classes" />Dar Aulas
                     </ButtonProffy.Green>
                 </BlockContent.Buttons>

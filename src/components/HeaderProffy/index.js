@@ -6,7 +6,7 @@ import { HeaderStyle } from "./style";
 // Images 
 import backIcon from '../../assets/images/icons/back.svg';
 
-export default function HeaderProffy({ title, subTitle}) {
+export default function HeaderProffy({ title, subTitle, children }) {
     return (
         <HeaderStyle>
             <HeaderStyle.Nav>
@@ -26,8 +26,11 @@ export default function HeaderProffy({ title, subTitle}) {
                         { subTitle }
                     </HeaderStyle.SubTitle>
                 }
+                
+                { children }
             </HeaderStyle.Wrapper>
-            
+
+
         </HeaderStyle>
     );
 }

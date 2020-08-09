@@ -9,6 +9,7 @@ export const HeaderStyle = styled.header`
     height: auto;
     min-height: 30vh;
     background-color: var(--color-primary);
+    color: var(--color-title-in-primary);
 `;
 HeaderStyle.Nav = styled.nav`
     padding: 2vh 10vw;
@@ -28,7 +29,7 @@ HeaderStyle.Wrapper = styled.div`
     justify-content: center;
     @media(min-width: 768px) {
         & {
-            padding: 2rem 20%;
+            padding: 2rem 15%;
         }
         & > h1,
         & > p {
@@ -40,7 +41,6 @@ HeaderStyle.Title = styled.h1`
     margin: 1.5rem 0;
     font-size: 3rem;
     font-weight: 700;
-    line-height: 4rem;
 `;
 HeaderStyle.SubTitle = styled.p`
     margin: 1.5rem 0;

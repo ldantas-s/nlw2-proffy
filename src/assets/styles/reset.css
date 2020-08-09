@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	width: 100%;
 	height: 100vh;
-	line-height: 1;
+    line-height: 4rem;
 	background-color: var(--color-background);
 }
 ol, ul {
@@ -62,7 +62,6 @@ button {
 		1rem: 9,6px;
 	*/
 	font: 500 1.6rem Poppins;
-	color: var(--color-title-in-primary);
 	outline: none;
 }
 

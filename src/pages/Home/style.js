@@ -6,6 +6,7 @@ export const MainHome = styled.main`
     height: 100vh;
     padding: 8rem;
     background-color: var(--color-primary);
+    color: var(--color-title-in-primary);
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 // Pages
 import Home from './pages/Home';
-import Proffys from './pages/Proffys';
+import TeacherList from './pages/TeacherList';
+import TeacherForm from './pages/TeacherForm';
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/proffys" component={Proffys} />
+        <Route path="/study" component={TeacherList} />
+        <Route path="/give-classes" component={TeacherForm} />
       </Switch>
     </BrowserRouter>
   );
