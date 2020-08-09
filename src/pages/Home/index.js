@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Components
 import ButtonProffy from '../../components/ButtonProffy';
@@ -27,7 +28,7 @@ function Home() {
             
             <BlockContent.Footer>
                 <BlockContent.Buttons>
-                    <ButtonProffy.Purple>
+                    <ButtonProffy.Purple as={Link} to="proffys">
                         <MainHome.Icon src={study} atl="Icon Study" />Estudar
                     </ButtonProffy.Purple>
                     <ButtonProffy.Green>
