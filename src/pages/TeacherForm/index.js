@@ -4,6 +4,7 @@ import HeaderProffy from '../../components/HeaderProffy';
 import FormFieldProffy from '../../components/FormFieldProffy';
 // Styles
 import { TeacherMain, FormStyle } from './style';
+import SelectProffy from '../../components/SelectProffy';
 
 export default function TeacherForm() {
     return (
@@ -18,12 +19,20 @@ export default function TeacherForm() {
 
                 <FormStyle>
                     <FormStyle.Fieldset>
-                        <FormStyle.Legend>Your Datas</FormStyle.Legend>
+                        <FormStyle.Legend>Yours data</FormStyle.Legend>
 
                         <FormFieldProffy label="Full Name" />
                         <FormFieldProffy label="Avatar url" />
                         <FormFieldProffy label="Whatsapp" />
-                        <FormFieldProffy label="biography" />
+                        <FormFieldProffy type="textarea" label="biography" />
+
+                    </FormStyle.Fieldset>
+
+                    <FormStyle.Fieldset>
+                        <FormStyle.Legend>About class</FormStyle.Legend>
+
+                        <SelectProffy label="Subject" />
+                        <FormFieldProffy label="Cost class per hour" />
 
                     </FormStyle.Fieldset>
                 </FormStyle>
