@@ -8,7 +8,8 @@ export default function SelectProffy({ options, label, ...props}) {
     const subjects = [
         { value: 'math', label: 'Math' },
         { value: 'portugese', label: 'Portugese' },
-        { value: 'english', label: 'English' }
+        { value: 'english', label: 'English' },
+        { value: 'programming', label: 'Programming' }
     ];
     const days = [
         { value: '0', label: 'Sunday' },

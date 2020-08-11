@@ -40,6 +40,15 @@ export default function TeacherList() {
                     subject="Programming"
                     costPerHour="200,00"
                 ></CardProffy>
+
+                <CardProffy
+                    teacherName="Beatriz Paes"
+                    avatar="https://pbs.twimg.com/profile_images/1288826166409863174/LU1v0SuT_400x400.jpg"
+                    whatsappNumber=""
+                    bio="Full stack web developer and online instructor, specializiing in mostly JS, but also write Python, PHP and some other stuff."
+                    subject="Programming"
+                    costPerHour="200,00"
+                ></CardProffy>
             </MainList>
         </>
     );

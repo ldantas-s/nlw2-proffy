@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // Components
 import HeaderProffy from '../../components/HeaderProffy';
 import FormFieldProffy from '../../components/FormFieldProffy';
@@ -11,6 +11,19 @@ import warning from '../../assets/images/icons/warning.svg';
 
 
 export default function TeacherForm() {
+
+    const [ scheduleItens, setScheduleItens ] = useState([
+        { week_day: null, from: '', to: '' }
+    ]);
+
+
+    function newSchedule(event) {
+        event.preventDefault();
+        setScheduleItens([
+            ...scheduleItens,
+            { week_day: null, from: '', to: '' }
+        ]);
+    }
 
     
 
@@ -47,15 +60,19 @@ export default function TeacherForm() {
                         <FormStyle.Legend>
                             <p>
                                 Available times
-                                <FormStyle.NewSchedule>+ New Schedule</FormStyle.NewSchedule>
+                                <FormStyle.NewSchedule onClick={newSchedule}>+ New Schedule</FormStyle.NewSchedule>
                             </p>
                         </FormStyle.Legend>
 
-                        <FormStyle.ScheduleItem>
-                            <SelectProffy options={'days'} label="Week days" placeholder="Select day" />
-                            <FormFieldProffy type="time" label="From" />
-                            <FormFieldProffy type="time" label="To" />
-                        </FormStyle.ScheduleItem>
+                        {scheduleItens.map((scheduleItem, index) => {
+                            return (
+                                <FormStyle.ScheduleItem key={scheduleItem.week_day+''+index}>
+                                    <SelectProffy options={'days'} label="Week days" placeholder="Select day" />
+                                    <FormFieldProffy type="time" label="From" />
+                                    <FormFieldProffy type="time" label="To" />
+                                </FormStyle.ScheduleItem>
+                            );
+                        })}
 
                     </FormStyle.Fieldset>
 

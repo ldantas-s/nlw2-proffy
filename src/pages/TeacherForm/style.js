@@ -65,6 +65,11 @@ FormStyle.NewSchedule = styled.button`
     }
 `;
 FormStyle.ScheduleItem = styled.div`
+    margin: 2rem 0;
+    transition: all 100ms linear;
+    & + & {
+        border-top: 1px solid var(--color-line-in-white);
+    }
     @media(min-width: 1024px) {
         & { 
             display: flex;
