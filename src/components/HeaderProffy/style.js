@@ -29,7 +29,7 @@ HeaderStyle.Wrapper = styled.div`
     justify-content: center;
     @media(min-width: 768px) {
         & {
-            padding: 2rem 15%;
+            padding: 2rem 24%;
         }
         & > h1,
         & > p {

@@ -29,7 +29,7 @@ export const FormStyle = styled.form`
     }
     @media(min-width: 1024px) {
         & {
-            width: 65rem;
+            width: 68rem;
         }
     }
 `;

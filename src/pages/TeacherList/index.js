@@ -3,6 +3,7 @@ import React from 'react';
 import HeaderProffy from '../../components/HeaderProffy';
 import FormFieldProffy from '../../components/FormFieldProffy';
 import CardProffy from '../../components/CardProffy';
+import SelectProffy from '../../components/SelectProffy';
 // Styles
 import { SearchForm, MainList } from './style';
 
@@ -15,9 +16,9 @@ export default function TeacherList() {
                 // subTitle="O primeiro passo, é preencher esse formulário de inscrição."
                 >
                 <SearchForm>
-                    <FormFieldProffy name="subject" label="Subject" />
-                    <FormFieldProffy name="week-day" label="Week Day" />
-                    <FormFieldProffy name="schedule" label="Schedule" />
+                    <SelectProffy placeholder="" options="subjects" name="subject" label="Subject" />
+                    <SelectProffy placeholder="" options="days" name="week_days" label="Week days" />
+                    <FormFieldProffy type="time" name="schedule" label="Schedule" />
                 </SearchForm>
             </HeaderProffy>
 

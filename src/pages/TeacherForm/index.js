@@ -12,20 +12,7 @@ import warning from '../../assets/images/icons/warning.svg';
 
 export default function TeacherForm() {
 
-    const subjects = [
-        { value: 'math', label: 'Math' },
-        { value: 'portugese', label: 'Portugese' },
-        { value: 'english', label: 'English' }
-    ];
-    const days = [
-        { value: '0', label: 'Sunday' },
-        { value: '1', label: 'Monday' },
-        { value: '2', label: 'Tuesday' },
-        { value: '3', label: 'Wednesday' },
-        { value: '4', label: 'Thursday' },
-        { value: '5', label: 'Friday' },
-        { value: '6', label: 'Sartuday' },
-    ];
+    
 
     return (
         <>
@@ -51,7 +38,7 @@ export default function TeacherForm() {
                     <FormStyle.Fieldset>
                         <FormStyle.Legend>About class</FormStyle.Legend>
 
-                        <SelectProffy options={subjects} label="Subject" placeholder="Select which you want to teach" />
+                        <SelectProffy options={'subjects'} label="Subject" placeholder="Select which you want to teach" />
                         <FormFieldProffy label="Cost class per hour" />
 
                     </FormStyle.Fieldset>
@@ -65,7 +52,7 @@ export default function TeacherForm() {
                         </FormStyle.Legend>
 
                         <FormStyle.ScheduleItem>
-                            <SelectProffy options={days} label="Week days" placeholder="Select day" />
+                            <SelectProffy options={'days'} label="Week days" placeholder="Select day" />
                             <FormFieldProffy type="time" label="From" />
                             <FormFieldProffy type="time" label="To" />
                         </FormStyle.ScheduleItem>
