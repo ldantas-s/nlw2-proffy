@@ -27,6 +27,7 @@ FormFieldWrapper.Input = styled.input`
     width: 100%;
     height: 5.6rem;
     border-radius: .6rem;
+    color: var(--color-text-complement);
     background: var(--color-input-background);
     border: 1px solid var(--color-line-in-white);
     outline: 0;

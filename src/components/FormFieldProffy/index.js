@@ -10,6 +10,7 @@ export default function FormFieldProffy({ label, type, ...rest }) {
         <FormFieldWrapper>
             <FormFieldWrapper.Label htmlFor={ label.toLowerCase() }>{ label }</FormFieldWrapper.Label>
             <FormFieldWrapper.Input 
+                type={type}
                 as={tag} 
                 name={ label.toLowerCase() } 
                 id={ label.toLowerCase() } 

@@ -1,26 +1,19 @@
 import React from 'react';
-// import Select from 'react-select';
 // Styles
 import { CustomSelect } from './style';
+import { FormFieldWrapper } from '../../components/FormFieldProffy/style';
 
 
-export default function SelectProffy({...props}) {
-    const options = [
-        { value: 'math', label: 'Math' },
-        { value: 'portugese', label: 'Portugese' },
-        { value: 'english', label: 'English' }
-      ]
-      
+export default function SelectProffy({ options, label, ...props}) {
     return (
-        <>
-            {/* <label htmlFor={ label.toLowerCase() }>{ label }</label> */}
+        <FormFieldWrapper>
+            <FormFieldWrapper.Label htmlFor={ label.toLowerCase() }>{ label }</FormFieldWrapper.Label>
             <CustomSelect
-                classNamePrefix="Select" 
-                {...props}
+                classNamePrefix="Select"
                 options={options} 
-                // name={ label.toLowerCase() } 
-                // id={label.toLowerCase()}
+                id={label.toLowerCase()}
+                {...props}
             />
-        </>
+        </FormFieldWrapper>
     );
 }

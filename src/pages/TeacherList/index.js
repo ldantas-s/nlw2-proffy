@@ -15,9 +15,9 @@ export default function TeacherList() {
                 // subTitle="O primeiro passo, é preencher esse formulário de inscrição."
                 >
                 <SearchForm>
-                    <FormFieldProffy label="Subject" />
-                    <FormFieldProffy label="Week Day" />
-                    <FormFieldProffy label="Schedule" />
+                    <FormFieldProffy name="subject" label="Subject" />
+                    <FormFieldProffy name="week-day" label="Week Day" />
+                    <FormFieldProffy name="schedule" label="Schedule" />
                 </SearchForm>
             </HeaderProffy>
 

@@ -1,13 +1,61 @@
 import styled from 'styled-components';
-import ReactSelect from 'react-select';
+import Select from 'react-select';
 
 
-export const CustomSelect = styled(ReactSelect)`
-    & .Select__indicator Select__dropdown-indicator {
-        border-color: green;
+// react-select
+// classNamePrefix-container
+    // classNamePrefix__control
+        // classNamePrefix__value-container
+        // classNamePrefix__indicators
+            // classNamePrefix__indicator-separator
+            // classNamePrefix__indicator
+                //svg
+    // classNamePrefix__menu
+        // classNamePrefix__menu-list
+            // classNamePrefix__option
+    
+    // '--is-disabled'
+    // '--is-focused'
+    // '--is-selected'
+
+
+export const CustomSelect = styled(Select)`
+
+    & .Select__control{
+        border: 1px solid var(--color-line-in-white) !important;
+        box-shadow: none;
     }
-    & .react-select-container .react-select__control .react-select__value-container {
-        border: 5px solid red;
-        background: orangered;
+
+    & .Select__value-container {
+        padding: 1.1rem;
+        border-radius: .8rem;
+        background: var(--color-input-background);
     }
+    & .Select__indicators {
+        background: var(--color-input-background);
+    }
+    & .Select__indicator-separator {
+        display: none;
+    }
+    & .Select__menu {
+        border-top: 0;
+        background: var(--color-input-background);
+        margin-top: 0;
+    }
+    & .Select__option {
+        color: var(--color-text-complement);
+    }
+    & .Select__option:hover {
+        border-left: 2px solid var(--color-primary);
+        background: var(--color-line-in-white);
+        transition: all 100ms linear;
+    }
+    & .Select__option--is-selected,
+    & .Select__option--is-focused {
+        border-left: 2px solid var(--color-primary);
+        background: var(--color-line-in-white);
+        color: var(--color-text-title);
+    }
+
+
 `;

@@ -4,6 +4,7 @@ import ButtonProffy from '../ButtonProffy';
 // Images
 import whatsapp from '../../assets/images/icons/whatsapp.svg';
 
+
 export const CardWrapper = styled.article`
     margin: 2.5rem 0;
     padding-top: 2rem;
@@ -16,8 +17,7 @@ export const CardHeader = styled.header`
     display: flex;
     align-items: center;
 `;
-CardHeader.Content = styled.div`
-`;
+CardHeader.Content = styled.div``;
 CardHeader.Avatar = styled.img`
     width: 7rem;
     height: 7rem;
