@@ -20,7 +20,10 @@ export const FormStyle = styled.form`
         min-height: 15rem;
     }
     & ${FormFieldWrapper}:nth-child(5):focus-within::after {
-        bottom: 3px;
+        
+        /* -webkit-bottom: 8px;
+        -moz-bottom: 3px; */
+        bottom: 5px;
     }
     @media(min-width: 768px) {
         & {
@@ -79,7 +82,7 @@ FormStyle.ScheduleItem = styled.div`
             margin: .5rem;
         }
     & ${FormFieldWrapper}:first-child {
-            flex: 5 0 300px;
+            flex: 5 0 234px;
         }
     }
 `;
