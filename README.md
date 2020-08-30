@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ![home screen desktop proffy](./public/favicon.ico) Proffy
 
-## Available Scripts
+> Projeto criado na NLW#2 (Next Level Week #2) usando a metodologia mobile first.
 
-In the project directory, you can run:
+![home screen desktop](src/assets/images/assets-readme/desktop.png)
 
-### `yarn start`
+![home screen mobile](src/assets/images/assets-readme/mobile.png)
+![proffyList screen mobile](src/assets/images/assets-readme/mobile1.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias:
+- react
+  - [useState](#usestate)
+- [react-select](#react-select)
+- [styled-components](#styled-components)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## react
+### useState()
 
-### `yarn test`
+>No uso do useState() não há muita novidade para mim, pois eu já tinha tido contado com ele
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![code example using useState()](src/assets/images/assets-readme/code-useState.png)
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## react-select
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Porém, com o react-select foi meu primeiro contato com ele e devo dizer que foi um tanto complicado no começo de entender como funcionava a mudança de estilo em conjunto com styled-components, mas consegui e fiquei bastante satisfeito com o resultado...
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![code example using react-select](src/assets/images/assets-readme/code-react-select.png)
 
-### `yarn eject`
+e abaixo estão as classes css que consegui identificar para fazer as mudanças no estilo do select usado
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![code example using react-select](src/assets/images/assets-readme/code-react-select-comments.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[back-top](#tecnologias)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## styled-components
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Apesar de ter um pouco mais de conforto com styled-components, neste projeto aprendi que, a partir de um component de estilo criado, dá para criar outros tendo ele como base sem ter a necessidade de importar todos eles no local onde será usado.
 
-## Learn More
+![code example using styled-components](src/assets/images/assets-readme/code-styled-components.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Vou explicar:
+![code example using styled-components](src/assets/images/assets-readme/code-styled-components-use.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`ButtonProffy` é o elemento importado no código acima, porém, a partir dele eu estou instanciando os dois, `ButtonProffy.Purple` e `ButtonProffy.Green`, elementos de button sem ter a necessidade de te-los importado, que foi criado no ButtonProffy/style.js
 
-### Code Splitting
+[back-top](#tecnologias)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
